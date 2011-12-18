@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		974693E1149E30BD008748C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974693E0149E30BD008748C2 /* UIKit.framework */; };
+		974693E3149E30BD008748C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974693E2149E30BD008748C2 /* Foundation.framework */; };
+		974693E5149E30BD008748C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974693E4149E30BD008748C2 /* CoreGraphics.framework */; };
+		974693EB149E30BD008748C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 974693E9149E30BD008748C2 /* InfoPlist.strings */; };
+		974693ED149E30BD008748C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 974693EC149E30BD008748C2 /* main.m */; };
+		974693F1149E30BD008748C2 /* PRPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 974693F0149E30BD008748C2 /* PRPAppDelegate.m */; };
+		974693F4149E30BD008748C2 /* PRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 974693F3149E30BD008748C2 /* PRPViewController.m */; };
+		974693F7149E30BD008748C2 /* PRPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 974693F5149E30BD008748C2 /* PRPViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		974693DC149E30BD008748C2 /* PRPFirstProjectTweeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRPFirstProjectTweeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		974693E0149E30BD008748C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		974693E2149E30BD008748C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		974693E4149E30BD008748C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		974693E8149E30BD008748C2 /* PRPFirstProjectTweeter-Info.plist */ = {isa = PBXFileReference; path = "PRPFirstProjectTweeter-Info.plist"; sourceTree = "<group>"; };
+		974693EA149E30BD008748C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		974693EC149E30BD008748C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		974693EE149E30BD008748C2 /* PRPFirstProjectTweeter-Prefix.pch */ = {isa = PBXFileReference; path = "PRPFirstProjectTweeter-Prefix.pch"; sourceTree = "<group>"; };
+		974693EF149E30BD008748C2 /* PRPAppDelegate.h */ = {isa = PBXFileReference; path = PRPAppDelegate.h; sourceTree = "<group>"; };
+		974693F0149E30BD008748C2 /* PRPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPAppDelegate.m; sourceTree = "<group>"; };
+		974693F2149E30BD008748C2 /* PRPViewController.h */ = {isa = PBXFileReference; path = PRPViewController.h; sourceTree = "<group>"; };
+		974693F3149E30BD008748C2 /* PRPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPViewController.m; sourceTree = "<group>"; };
+		974693F6149E30BD008748C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PRPViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		974693D9149E30BD008748C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				974693E1149E30BD008748C2 /* UIKit.framework in Frameworks */,
+				974693E3149E30BD008748C2 /* Foundation.framework in Frameworks */,
+				974693E5149E30BD008748C2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		974693D1149E30BC008748C2 = {
+			isa = PBXGroup;
+			children = (
+				974693E6149E30BD008748C2 /* PRPFirstProjectTweeter */,
+				974693DF149E30BD008748C2 /* Frameworks */,
+				974693DD149E30BD008748C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		974693DD149E30BD008748C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				974693DC149E30BD008748C2 /* PRPFirstProjectTweeter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		974693DF149E30BD008748C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				974693E0149E30BD008748C2 /* UIKit.framework */,
+				974693E2149E30BD008748C2 /* Foundation.framework */,
+				974693E4149E30BD008748C2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		974693E6149E30BD008748C2 /* PRPFirstProjectTweeter */ = {
+			isa = PBXGroup;
+			children = (
+				974693EF149E30BD008748C2 /* PRPAppDelegate.h */,
+				974693F0149E30BD008748C2 /* PRPAppDelegate.m */,
+				974693F2149E30BD008748C2 /* PRPViewController.h */,
+				974693F3149E30BD008748C2 /* PRPViewController.m */,
+				974693F5149E30BD008748C2 /* PRPViewController.xib */,
+				974693E7149E30BD008748C2 /* Supporting Files */,
+			);
+			path = PRPFirstProjectTweeter;
+			sourceTree = "<group>";
+		};
+		974693E7149E30BD008748C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				974693E8149E30BD008748C2 /* PRPFirstProjectTweeter-Info.plist */,
+				974693E9149E30BD008748C2 /* InfoPlist.strings */,
+				974693EC149E30BD008748C2 /* main.m */,
+				974693EE149E30BD008748C2 /* PRPFirstProjectTweeter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		974693DB149E30BD008748C2 /* PRPFirstProjectTweeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 974693FA149E30BD008748C2 /* Build configuration list for PBXNativeTarget "PRPFirstProjectTweeter" */;
+			buildPhases = (
+				974693D8149E30BD008748C2 /* Sources */,
+				974693D9149E30BD008748C2 /* Frameworks */,
+				974693DA149E30BD008748C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PRPFirstProjectTweeter;
+			productName = PRPFirstProjectTweeter;
+			productReference = 974693DC149E30BD008748C2 /* PRPFirstProjectTweeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		974693D3149E30BC008748C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "e-tuitive";
+			};
+			buildConfigurationList = 974693D6149E30BC008748C2 /* Build configuration list for PBXProject "PRPFirstProjectTweeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 974693D1149E30BC008748C2;
+			productRefGroup = 974693DD149E30BD008748C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				974693DB149E30BD008748C2 /* PRPFirstProjectTweeter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		974693DA149E30BD008748C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				974693EB149E30BD008748C2 /* InfoPlist.strings in Resources */,
+				974693F7149E30BD008748C2 /* PRPViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		974693D8149E30BD008748C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				974693ED149E30BD008748C2 /* main.m in Sources */,
+				974693F1149E30BD008748C2 /* PRPAppDelegate.m in Sources */,
+				974693F4149E30BD008748C2 /* PRPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		974693E9149E30BD008748C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				974693EA149E30BD008748C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		974693F5149E30BD008748C2 /* PRPViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				974693F6149E30BD008748C2 /* en */,
+			);
+			name = PRPViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		974693F8149E30BD008748C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		974693F9149E30BD008748C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		974693FB149E30BD008748C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PRPFirstProjectTweeter/PRPFirstProjectTweeter-Prefix.pch";
+				INFOPLIST_FILE = "PRPFirstProjectTweeter/PRPFirstProjectTweeter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		974693FC149E30BD008748C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PRPFirstProjectTweeter/PRPFirstProjectTweeter-Prefix.pch";
+				INFOPLIST_FILE = "PRPFirstProjectTweeter/PRPFirstProjectTweeter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		974693D6149E30BC008748C2 /* Build configuration list for PBXProject "PRPFirstProjectTweeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				974693F8149E30BD008748C2 /* Debug */,
+				974693F9149E30BD008748C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		974693FA149E30BD008748C2 /* Build configuration list for PBXNativeTarget "PRPFirstProjectTweeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				974693FB149E30BD008748C2 /* Debug */,
+				974693FC149E30BD008748C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 974693D3149E30BC008748C2 /* Project object */;
+}
