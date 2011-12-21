@@ -15,6 +15,8 @@
 		974693F1149E30BD008748C2 /* PRPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 974693F0149E30BD008748C2 /* PRPAppDelegate.m */; };
 		974693F4149E30BD008748C2 /* PRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 974693F3149E30BD008748C2 /* PRPViewController.m */; };
 		974693F7149E30BD008748C2 /* PRPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 974693F5149E30BD008748C2 /* PRPViewController.xib */; };
+		97EC4ABC14A0BE3B0095E947 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EC4ABB14A0BE3B0095E947 /* Twitter.framework */; };
+		97F7254214A190BB0075C873 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 97F7254114A190BB0075C873 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +24,17 @@
 		974693E0149E30BD008748C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		974693E2149E30BD008748C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		974693E4149E30BD008748C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		974693E8149E30BD008748C2 /* PRPFirstProjectTweeter-Info.plist */ = {isa = PBXFileReference; path = "PRPFirstProjectTweeter-Info.plist"; sourceTree = "<group>"; };
+		974693E8149E30BD008748C2 /* PRPFirstProjectTweeter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PRPFirstProjectTweeter-Info.plist"; sourceTree = "<group>"; };
 		974693EA149E30BD008748C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		974693EC149E30BD008748C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		974693EE149E30BD008748C2 /* PRPFirstProjectTweeter-Prefix.pch */ = {isa = PBXFileReference; path = "PRPFirstProjectTweeter-Prefix.pch"; sourceTree = "<group>"; };
-		974693EF149E30BD008748C2 /* PRPAppDelegate.h */ = {isa = PBXFileReference; path = PRPAppDelegate.h; sourceTree = "<group>"; };
+		974693EE149E30BD008748C2 /* PRPFirstProjectTweeter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PRPFirstProjectTweeter-Prefix.pch"; sourceTree = "<group>"; };
+		974693EF149E30BD008748C2 /* PRPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPAppDelegate.h; sourceTree = "<group>"; };
 		974693F0149E30BD008748C2 /* PRPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPAppDelegate.m; sourceTree = "<group>"; };
-		974693F2149E30BD008748C2 /* PRPViewController.h */ = {isa = PBXFileReference; path = PRPViewController.h; sourceTree = "<group>"; };
+		974693F2149E30BD008748C2 /* PRPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPViewController.h; sourceTree = "<group>"; };
 		974693F3149E30BD008748C2 /* PRPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPViewController.m; sourceTree = "<group>"; };
 		974693F6149E30BD008748C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PRPViewController.xib; sourceTree = "<group>"; };
+		97EC4ABB14A0BE3B0095E947 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		97F7254114A190BB0075C873 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97EC4ABC14A0BE3B0095E947 /* Twitter.framework in Frameworks */,
 				974693E1149E30BD008748C2 /* UIKit.framework in Frameworks */,
 				974693E3149E30BD008748C2 /* Foundation.framework in Frameworks */,
 				974693E5149E30BD008748C2 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +55,7 @@
 		974693D1149E30BC008748C2 = {
 			isa = PBXGroup;
 			children = (
+				97F7254114A190BB0075C873 /* README.md */,
 				974693E6149E30BD008748C2 /* PRPFirstProjectTweeter */,
 				974693DF149E30BD008748C2 /* Frameworks */,
 				974693DD149E30BD008748C2 /* Products */,
@@ -67,6 +73,7 @@
 		974693DF149E30BD008748C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97EC4ABB14A0BE3B0095E947 /* Twitter.framework */,
 				974693E0149E30BD008748C2 /* UIKit.framework */,
 				974693E2149E30BD008748C2 /* Foundation.framework */,
 				974693E4149E30BD008748C2 /* CoreGraphics.framework */,
@@ -151,6 +158,7 @@
 			files = (
 				974693EB149E30BD008748C2 /* InfoPlist.strings in Resources */,
 				974693F7149E30BD008748C2 /* PRPViewController.xib in Resources */,
+				97F7254214A190BB0075C873 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +283,7 @@
 				974693FC149E30BD008748C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

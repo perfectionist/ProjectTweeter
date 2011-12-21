@@ -7,6 +7,7 @@
 //
 
 #import "PRPViewController.h"
+#import <Twitter/Twitter.h>
 
 @implementation PRPViewController
 
@@ -14,6 +15,18 @@
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
+}
+
+#pragma mark - Actions
+
+- (IBAction)handleTwitterButtonTapped:(id)sender {
+    if ([TWTweetComposeViewController canSendTweet]) {
+        TWTweetComposeViewController *tweetVC = [[TWTweetComposeViewController alloc] init];
+        [tweetVC setInitialText:@"I just finished the first project in iOS SDK Development. #pragsios"];
+        [self presentModalViewController:tweetVC animated:YES];
+    } else {
+        NSLog(@"Can't send tweet");
+    }
 }
 
 #pragma mark - View lifecycle
