@@ -10,4 +10,6 @@
 
 @interface PRPViewController : UIViewController
 
+@property(nonatomic,strong) IBOutlet UIWebView *twitterWebView;
+
 @end

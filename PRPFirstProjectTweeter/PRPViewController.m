@@ -11,6 +11,8 @@
 
 @implementation PRPViewController
 
+@synthesize twitterWebView = _twitterWebView;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -28,6 +30,11 @@
         NSLog(@"Can't send tweet");
     }
 }
+
+- (IBAction)showMyTweetsTapped:(id)sender {
+    [self.twitterWebView loadRequest:[NSURLRequest requestWithURL:
+                                      [NSURL URLWithString:@"http://www.twitter.com/loeffler"]]];
+}  
 
 #pragma mark - View lifecycle
 
