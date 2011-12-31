@@ -24,7 +24,8 @@
 - (IBAction)handleTwitterButtonTapped:(id)sender {
     if ([TWTweetComposeViewController canSendTweet]) {
         TWTweetComposeViewController *tweetVC = [[TWTweetComposeViewController alloc] init];
-        [tweetVC setInitialText:@"I just finished the first project in iOS SDK Development. #pragsios"];
+        [tweetVC setInitialText:
+           NSLocalizedString(@"I just finished the first project in iOS SDK Development. #pragsios", nil)];
         [self presentModalViewController:tweetVC animated:YES];
     } else {
         NSLog(@"Can't send tweet");

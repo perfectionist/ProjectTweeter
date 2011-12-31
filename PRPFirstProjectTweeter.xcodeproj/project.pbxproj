@@ -15,6 +15,7 @@
 		974693F1149E30BD008748C2 /* PRPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 974693F0149E30BD008748C2 /* PRPAppDelegate.m */; };
 		974693F4149E30BD008748C2 /* PRPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 974693F3149E30BD008748C2 /* PRPViewController.m */; };
 		974693F7149E30BD008748C2 /* PRPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 974693F5149E30BD008748C2 /* PRPViewController.xib */; };
+		97E678A414AFC4F500BE7863 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97E678A614AFC4F500BE7863 /* Localizable.strings */; };
 		97EC4ABC14A0BE3B0095E947 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EC4ABB14A0BE3B0095E947 /* Twitter.framework */; };
 		97F7254214A190BB0075C873 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 97F7254114A190BB0075C873 /* README.md */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,9 @@
 		974693F2149E30BD008748C2 /* PRPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPViewController.h; sourceTree = "<group>"; };
 		974693F3149E30BD008748C2 /* PRPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPViewController.m; sourceTree = "<group>"; };
 		974693F6149E30BD008748C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PRPViewController.xib; sourceTree = "<group>"; };
+		97E678A114AFC26300BE7863 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/PRPViewController.xib; sourceTree = "<group>"; };
+		97E678A514AFC4F500BE7863 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		97E678A714AFC50800BE7863 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		97EC4ABB14A0BE3B0095E947 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		97F7254114A190BB0075C873 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +105,7 @@
 				974693E9149E30BD008748C2 /* InfoPlist.strings */,
 				974693EC149E30BD008748C2 /* main.m */,
 				974693EE149E30BD008748C2 /* PRPFirstProjectTweeter-Prefix.pch */,
+				97E678A614AFC4F500BE7863 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 			);
 			mainGroup = 974693D1149E30BC008748C2;
 			productRefGroup = 974693DD149E30BD008748C2 /* Products */;
@@ -159,6 +165,7 @@
 				974693EB149E30BD008748C2 /* InfoPlist.strings in Resources */,
 				974693F7149E30BD008748C2 /* PRPViewController.xib in Resources */,
 				97F7254214A190BB0075C873 /* README.md in Resources */,
+				97E678A414AFC4F500BE7863 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +197,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				974693F6149E30BD008748C2 /* en */,
+				97E678A114AFC26300BE7863 /* fr */,
 			);
 			name = PRPViewController.xib;
+			sourceTree = "<group>";
+		};
+		97E678A614AFC4F500BE7863 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97E678A514AFC4F500BE7863 /* en */,
+				97E678A714AFC50800BE7863 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
