@@ -9,6 +9,10 @@
 #import "PRPViewController.h"
 #import <Twitter/Twitter.h>
 
+@interface PRPViewController() 
+-(void) reloadTweets;
+@end
+
 @implementation PRPViewController
 
 @synthesize twitterWebView = _twitterWebView;
@@ -23,19 +27,29 @@
 
 - (IBAction)handleTwitterButtonTapped:(id)sender {
     if ([TWTweetComposeViewController canSendTweet]) {
-        TWTweetComposeViewController *tweetVC = [[TWTweetComposeViewController alloc] init];
-        [tweetVC setInitialText:
-           NSLocalizedString(@"I just finished the first project in iOS SDK Development. #pragsios", nil)];
+        TWTweetComposeViewController *tweetVC = [[TWTweetComposeViewController alloc]
+                                                 init];
+        [tweetVC setInitialText: NSLocalizedString (
+                                                    @"I just finished the first project in iOS SDK Development. #pragsios",
+                                                    nil)];
+        tweetVC.completionHandler = ^(TWTweetComposeViewControllerResult result) {
+            [self dismissModalViewControllerAnimated:YES];
+            if (result == TWTweetComposeViewControllerResultDone) { 
+                [self reloadTweets];  
+            }
+        };
         [self presentModalViewController:tweetVC animated:YES];
-    } else {
-        NSLog(@"Can't send tweet");
     }
 }
 
 - (IBAction)showMyTweetsTapped:(id)sender {
+    [self reloadTweets];
+}  
+
+-(void) reloadTweets {
     [self.twitterWebView loadRequest:[NSURLRequest requestWithURL:
                                       [NSURL URLWithString:@"http://www.twitter.com/loeffler"]]];
-}  
+}
 
 #pragma mark - View lifecycle
 
@@ -77,5 +91,6 @@
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+
 
 @end
