@@ -34,7 +34,6 @@
 		974693F2149E30BD008748C2 /* PRPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRPViewController.h; sourceTree = "<group>"; };
 		974693F3149E30BD008748C2 /* PRPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRPViewController.m; sourceTree = "<group>"; };
 		974693F6149E30BD008748C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PRPViewController.xib; sourceTree = "<group>"; };
-		97E678A114AFC26300BE7863 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/PRPViewController.xib; sourceTree = "<group>"; };
 		97E678A514AFC4F500BE7863 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		97E678A714AFC50800BE7863 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		97EC4ABB14A0BE3B0095E947 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
@@ -197,7 +196,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				974693F6149E30BD008748C2 /* en */,
-				97E678A114AFC26300BE7863 /* fr */,
 			);
 			name = PRPViewController.xib;
 			sourceTree = "<group>";
