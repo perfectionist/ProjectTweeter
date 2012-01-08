@@ -24,6 +24,16 @@ Great bit of advice in Adamson and Dudney book:
 
 This is because we are changing the UI components and you'll need to fix all the localizations at the same time. Better to wait until the UI is complete.
 
+In this chapter we parse the JSON and handle the display ourselves.  We ask for the `user_timeline` passing in the `screen_name` as a parameter.  An example of the returning JSON returned from this request is on the [**Twitter** API site](https://dev.twitter.com/docs/api/1/get/statuses/user_timeline).  In this case the GET request looks like 
+    	
+	https://api.twitter.com/1/statuses/user_timeline.json?screen_name=your_account_name
+
+You can see the returned JSON by just putting this in your web browser. You might want to add `&count=1` or `&count=2` at the end of the URL.
+
+When parsing the returned JSON we pick out just the `created_at` and `text`.  
+
+Getting back to the main thread in the application is done by using `dispatch_async()` with a queue and a block.  The queue we want is the **main** queue that we get by using the function: `dispatch_get_main_queue()`.
+
 Version tag is **v3.0**.
 
 ## Environment ##
@@ -37,7 +47,7 @@ Version tag is **v3.0**.
 ### iOS Programming ###
 * [iOS SDK Programming](http://pragprog.com/book/adios/ios-sdk-development) by Chris Adamson and Bill Dudney.
         This is an excellent book with uptodate iOS 5 examples.  It uses ARC and storyboards by default.  I am using the first *beta* version.
-* [iOS Programming, the Big Nerd Ranch Guide, 2nd Ed](http://www.bignerdranch.com/book/ios_programming_the_big_nerd_ranch_guide_nd_edition_)
+* [iOS Programming, the Big Nerd Ranch Guide, 2nd Ed](http://www.bignerdranch.com/book/ios_programming_the_big_nerd_ranch_guide_nd_edition_) covers iOS 4 and their approach to development. There are some minor things I take exception with but overall this is an excellent book and looking forward to the 3rd edition.
 
 ### Xcode ###
 * [Xcode 4 videos](http://pragmaticstudio.com/screencast-tags/xcode4) **FREE**. These
@@ -48,7 +58,11 @@ Version tag is **v3.0**.
 * [Programming in Objective-C 2.0, 2nd Edition](http://www.pearsonhighered.com/educator/product/Programming-in-ObjectiveC-20/9780321566157.page) by Stephen G. Kochan is a excellent reference but does not really cover the idoms and best practices. 
 
 ### Git and GitHub ###
-* [Git](http://git-scm.com/) site has an [documentation](http://git-scm.com/documentation) link that has tutorials to developer documentation. [Xcode supports git](http://developer.apple.com/library/ios/#documentation/ToolsLanguages/Conceptual/Xcode4UserGuide/SCM/SCM.html#//apple_ref/doc/uid/TP40010215-CH7-SW12). I use a combination of Xcode and SourceTree to manage my git repository.  Most adds and commits are from inside Xcode.  Merges, tagging, pushing to GitHub are from SourceTree.  Of course I also make use of the command line (mainly for setup) and even some commands on GitHub itself.
-* [GitHub](http://github.com/) site has a very good set of help pages.
-* [Insider Guide to GitHub videos](http://pragprog.com/screencasts/v-scgithub/insider-guide-to-github) while a bit dated have some excellent tips. First video is free, second is just $5.
+* [Git](http://git-scm.com/) site has an [documentation](http://git-scm.com/documentation) link that has tutorials to developer documentation as well as download the software. [Xcode supports git](http://developer.apple.com/library/ios/#documentation/ToolsLanguages/Conceptual/Xcode4UserGuide/SCM/SCM.html#//apple_ref/doc/uid/TP40010215-CH7-SW12). I use a combination of Xcode and SourceTree to manage my git repository.  Most adds and commits are from inside Xcode.  Merges, tagging, pushing to GitHub are from SourceTree.  Of course I also make use of the command line (mainly for setup) and even some commands on GitHub itself.
+* [GitHub](http://github.com/) is the place to share your git repositories with others and the site has a very good set of help pages.
+* [Insider Guide to GitHub videos](http://pragprog.com/screencasts/v-scgithub/insider-guide-to-github) from Pragmatic Programmer are  a bit dated but have some excellent tips. First video is free, second is just $5.
 * [SourceTree](http://www.sourcetreeapp.com/) from Atlassian is **FREE** tool for managing source code and you can download at the [Mac App Store](http://itunes.apple.com/us/app/sourcetree/id411678673?mt=12&ls=1).  It works well with **git** and **GitHub**.  
+
+### Miscellaneous ###
+* [Marked](http://brettterpstra.com/project/marked/) is a great tool for previewing Markdown for the `README.md ` file. It even has a GitHub stylesheet.
+* [MultiMarkdown Composer](http://multimarkdown.com/) is also a good tool for authoring any markdown file in the project.  It helps you to remember the *correct* syntax.

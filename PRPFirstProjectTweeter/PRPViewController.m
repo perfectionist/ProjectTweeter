@@ -59,12 +59,21 @@
     }];
 }
 
-- (void) handleTwitterData:(NSData *)data urlResponse:(NSHTTPURLResponse *)urlResponse error:(NSError *)error {
+- (void) handleTwitterData:(NSData *)data 
+               urlResponse:(NSHTTPURLResponse *)urlResponse 
+                     error:(NSError *)error {
     NSError *jsonError = nil;
     NSJSONSerialization *jsonResponse = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
     if(!jsonError && [jsonResponse isKindOfClass:[NSArray class]]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSArray *tweets = (NSArray*) jsonResponse;
+            // Sort tweets by text in tweet.  This is just for illustration of how to use
+            // block to be the comparator.
+            tweets = [tweets sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
+                NSString *tweet1 = [obj1 valueForKey:@"text"];
+                NSString *tweet2 = [obj2 valueForKey:@"text"];
+                return [tweet1 compare: tweet2];
+            } ];
             for (NSDictionary *tweetDict in tweets) {
                 NSString *tweetText = [NSString stringWithFormat:@"%@ (%@)", [tweetDict valueForKey:@"text"], [tweetDict valueForKey:@"created_at"]];
                 self.twitterTextView.text = [NSString stringWithFormat:@"%@%@\n\n", self.twitterTextView.text, tweetText];
