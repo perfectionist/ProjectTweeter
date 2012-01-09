@@ -34,7 +34,14 @@ When parsing the returned JSON we pick out just the `created_at` and `text`.
 
 Getting back to the main thread in the application is done by using `dispatch_async()` with a queue and a block.  The queue we want is the **main** queue that we get by using the function: `dispatch_get_main_queue()`.
 
+Interesting examples of KVC.  One in replacing a block for sorting tweets using an array of sort descriptors (one or more). The other for accessing dictionary using `valueForKeyPath:` instead of `valueForKey:`, so you can access the `name` attribute with the string `@"user.name"`.
+
 Version tag is **v3.0**.
+#### Design Patterns ####
+The Apple documentation on [cocoa design patterns](http://developer.apple.com/library/ios/#documentation/Cocoa/Conceptual/CocoaFundamentals/CocoaDesignPatterns/CocoaDesignPatterns.html#//apple_ref/doc/uid/TP40002974-CH6) does not mention these patterns.  I need to find better references than the ones below.  The KVC one is okay.
+
+* [Completion Handler Pattern (or Proactor Pattern)](http://en.wikipedia.org/wiki/Proactor_pattern)
+* [Key- Value Coding (KVC)](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/KeyValueCoding/Articles/Overview.html#//apple_ref/doc/uid/20001838-SW1)
 
 ## Environment ##
 
